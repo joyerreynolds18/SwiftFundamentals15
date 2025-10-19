@@ -1,12 +1,12 @@
-# Name: 
+# Name: Joyer Reynolds
 
 ## About Me
-* School Email: 
-* Dream Career: 
-* Hidden Talent: 
+* School Email: reynoldsj2944@durhamtech.edu
+* Dream Career: Data Analyst
+* Hidden Talent: Sleeping
 
 ## Course Information
-* Semester: 
+* Semester: Term B fall 2025
 * Course Name: CSC 118 - Swift Fundamentals I
 * Institution: [Durham Technical Community College](https://www.durhamtech.edu/)
 * Textbook: [Develop in Swift Fundamentals Xcode 15](https://books.apple.com/us/book/develop-in-swift-fundamentals/id6468967906)
