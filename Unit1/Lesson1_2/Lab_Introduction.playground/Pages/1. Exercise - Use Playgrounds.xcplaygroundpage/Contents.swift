@@ -10,6 +10,14 @@ print("How to use playgrounds to make writing Swift fun and simple")
 /*:
  Now print your own phrases to the console. Pick one of your favorite songs. Use your knowledge of the `print` function to display the song title and artist.
  */
+print(" Song Title: United Nations + 1000 Ways to Die")
+print (" Artist: Mariah The Scientist")
+
+print ("And I could die a thousand times")
+print ("A thousand ways")
+print ("A thousand lives")
+print ("If you would be in the next life too")
+
 
 
 /*:
