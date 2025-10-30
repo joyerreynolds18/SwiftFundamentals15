@@ -17,3 +17,17 @@
 /*:
 [Previous](@previous)  |  page 6 of 8  |  [Next: Exercise - Numeric Type Conversion](@next)
  */
+
+
+let heartRate1: Double = 72
+let heartRate2: Double = 88
+let heartRate3: Double = 94
+
+// Average heart rate calculated in one line using order of operations
+let averageHeartRate = (heartRate1 + heartRate2 + heartRate3) / 3
+print(averageHeartRate)
+let tempInFahrenheit = 98.6
+
+// Convert to Celsius in one line
+let tempInCelsius = (tempInFahrenheit - 32) * (5.0 / 9.0)
+print(tempInCelsius)
