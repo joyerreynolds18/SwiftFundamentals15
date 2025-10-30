@@ -8,6 +8,32 @@
 
 
 //:  Now create a new, but similar, if-else-if statement that prints "Way to get a good start today!" if `steps` is less than a tenth of `stepGoal`, prints "You're almost halfway there!" if `steps` is less than half of `stepGoal`, and prints "You're over halfway there!" if `steps` is greater than half of `stepGoal`.
+/*:
+## App Exercise - Fitness Decisions
+*/
+
+// Part 1
+var steps = 4200
+let stepGoal = 10000
+
+if steps < stepGoal / 2 {
+    print("You're almost halfway there!")
+} else {
+    print("You're over halfway there!")
+}
+
+// Part 2
+if steps < stepGoal / 10 {
+    print("Way to get a good start today!")
+} else if steps < stepGoal / 2 {
+    print("You're almost halfway there!")
+} else {
+    print("You're over halfway there!")
+}
+
+/*:
+[Previous](@previous) | page 3 of 9 | [Next: Exercise - Boolean Practice](@next)
+*/
 
 
 /*:
