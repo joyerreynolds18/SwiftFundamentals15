@@ -40,6 +40,3 @@ if isNiceWeather {
 [Previous](@previous) | page 4 of 9 | [Next: App Exercise - Target Heart Rate](@next)
 */
 
-/*:
-[Previous](@previous)  |  page 4 of 9  |  [Next: App Exercise - Target Heart Rate](@next)
- */
