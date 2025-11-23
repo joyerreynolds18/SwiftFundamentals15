@@ -100,7 +100,13 @@ print(sameShip.position)
 print(falcon.position)
 
 print("Both changed because classes are reference types. If they were structs, they would be copies and only one would change.")
-/*:
+ 
+ 
+ 
+ 
+ 
+ /*:
+
  Note that each class above has an error by the class declaration that says "Class has no initializers." Unlike structs, classes do not come with memberwise initializers because the standard memberwise initializers don't always play nicely with inheritance. You can get rid of the error by providing default values for everything, but it is common, and better practice, to simply write your own initializer. Go to the declaration of `Spaceship` and add an initializer that takes in an argument for each property on `Spaceship` and sets the properties accordingly.
 
  Then create an instance of `Spaceship` below called `falcon`. Use the memberwise initializer you just created. The ship's name should be "Falcon."
