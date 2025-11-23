@@ -8,6 +8,13 @@ class Spaceship {
     var health: Int
     var position: Int
 
+ init(name: String, health: Int, position: Int {
+  self.name = name
+  self.health = health
+  self.position = position
+
+ }
+
     func moveLeft() {
         position -= 1
     }
@@ -28,6 +35,12 @@ class Fighter: Spaceship {
     let weapon: String
     var remainingFirePower: Int
 
+init(name: String, health: Int, position: Int, weapon: String, remainingFirePower: Int) {
+     self.weapon = weapon
+     self.remainingFirepower = remainingFirepower
+     super.init(name: name, health: health, position: position)
+}
+ 
     func fire() {
         if remainingFirePower > 0 {
             remainingFirePower -= 1
@@ -40,6 +53,11 @@ class Fighter: Spaceship {
 class ShieldedShip: Fighter {
     var shieldStrength: Int
 
+ init(name: string, health: Int, position: Int, weapon: String, remainingFirePower: Int, shieldStrength: Int) {
+      self.shieldStrength = shieldStrength
+      super.init(name: name, health: health, position: position, weapon: weapon, remainingFirePower: remainingFirePower)
+ }
+
     override func wasHit() {
         if shieldStrength > 0 {
             shieldStrength -= 5
@@ -48,6 +66,40 @@ class ShieldedShip: Fighter {
         }
     }
 }
+
+
+ // Instances
+let falcon = Spaceship(name: "Falcon", health: 100, position: 0)
+
+let destroyer = Fighter(
+    name: "Destroyer",
+    health: 100,
+    position: 0,
+    weapon: "Laser",
+    remainingFirePower: 5
+)
+
+let defender = ShieldedShip(
+    name: "Defender",
+    health: 100,
+    position: 0,
+    weapon: "Cannon",
+    remainingFirePower: 5,
+    shieldStrength: 25
+)
+
+// Reference test
+let sameShip = falcon
+
+print(sameShip.position)
+print(falcon.position)
+
+sameShip.moveLeft()
+
+print(sameShip.position)
+print(falcon.position)
+
+print("Both changed because classes are reference types. If they were structs, they would be copies and only one would change.")
 /*:
  Note that each class above has an error by the class declaration that says "Class has no initializers." Unlike structs, classes do not come with memberwise initializers because the standard memberwise initializers don't always play nicely with inheritance. You can get rid of the error by providing default values for everything, but it is common, and better practice, to simply write your own initializer. Go to the declaration of `Spaceship` and add an initializer that takes in an argument for each property on `Spaceship` and sets the properties accordingly.
 
